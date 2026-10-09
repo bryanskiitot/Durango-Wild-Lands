@@ -90,33 +90,16 @@ function renderConfirmedRecipeSteps(recipe){
  summary.textContent=recipe.ingredients.length+' material selection(s), shown in one box per required ingredient. Quantity is kept beside the ingredient name.';
  function materialTypesForIngredient(ingredient){
   const name=String(ingredient?.name||'').trim().toLowerCase();
-  // Explicit source/user-confirmed mapping. Add more only when the Mastersheet documents them.
+  // Explicit user-confirmed mapping; other options come only from exact recorded generic names.
   const knownMap={'rope':['Stalk']};
   if(knownMap[name])return knownMap[name];
-  const exact=[...new Set(materials.map(m=>String(m.genericName||'').trim()).filter(Boolean))].filter(t=>t.toLowerCase()===name);
-  if(exact.length)return exact;
-  // For ingredients whose names include a recorded generic material type, use that exact type label.
   const generic=[...new Set(materials.map(m=>String(m.genericName||'').trim()).filter(Boolean))];
-  const contained=generic.filter(t=>t&&new RegExp('(^|[^a-z])'+t.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g,'\\ function categoryOf(m){
-  const g=String(m.genericName||'').toLowerCase();
-  const n=String(m.name||'').toLowerCase();
-  if(/leather|pelt|hide/.test(g+' '+n))return 'Leather';
-  if(/bone|rib|skull|ivory|horn/.test(g+' '+n))return 'Bone';
-  if(/wood|branch|stick|log|plank|pillar/.test(g+' '+n))return 'Wood';
-  if(/stone|rock|obsidian|marble/.test(g+' '+n))return 'Stone';
-  if(/fiber|fibre|thread|rope|cord|strap|string/.test(g+' '+n))return 'Fiber / Cordage';
-  if(/metal|iron|copper|nail|ore/.test(g+' '+n))return 'Metal';
-  if(/plant|leaf|herb|flower|fruit|vegetable/.test(g+' '+n))return 'Plant';
-  return String(m.genericName||m.type||'Other material');
- }
- function fillFamilies(i){
-  const family=$('recipe-family-'+i),type=$('recipe-material-'+i);
-  const cats=[...new Set(materials.map(categoryOf))].sort((a,b)=>a.localeCompare(b));
-  family.innerHTML='<option value="">— Choose material category —</option>'+cats.map(c=>'<option value="'+esc(c)+'">'+esc(c)+'</option>').join('');
-  type.innerHTML='<option value="">— Choose category first —</option>';type.disabled=true;
- }
-')+'([^a-z]|$)').test(name));
-  return contained;
+  const exact=generic.filter(t=>t.toLowerCase()===name);
+  if(exact.length)return exact;
+  return generic.filter(t=>{
+   const words=name.split(/[^a-z]+/).filter(Boolean);
+   return words.some(word=>word.length>2&&word===t.toLowerCase());
+  });
  }
  function fillFamilies(i){
   const family=$('recipe-family-'+i),type=$('recipe-material-'+i),ingredient=selectedConfirmedRecipe?.ingredients?.[i];
