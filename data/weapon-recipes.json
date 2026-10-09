@@ -1,7 +1,7 @@
 {
   "title": "Confirmed Weapon Recipes",
   "source": "Durango Wildlands Mastersheet PDF — Material Recipe section",
-  "sourceNote": "Ingredient names and quantities are transcribed from the Mastersheet. Crafting levels are omitted because the flattened table extraction makes some level columns ambiguous. The Mastersheet is a community-compiled work in progress, not an official game database.",
+  "sourceNote": "Ingredient names and quantities are transcribed from the Mastersheet. Crafting levels are omitted because the flattened table extraction makes some level columns ambiguous. The Mastersheet is a community-compiled work in progress, not an official game database. Additional crossbow recipes were added from the same Mastersheet recipe table where all ingredient names and quantities were visible.",
   "recipes": [
     {
       "id": "stone-knife-blade",
@@ -121,6 +121,82 @@
         {
           "name": "Shaft",
           "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "wooden-crossbow",
+      "name": "Wooden Crossbow",
+      "station": "Workbench",
+      "ingredients": [
+        {
+          "name": "Trimmed Wood Pillar",
+          "quantity": 1
+        },
+        {
+          "name": "Cord",
+          "quantity": 1
+        },
+        {
+          "name": "Nail",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "improved-crossbow",
+      "name": "Improved Crossbow",
+      "station": "Workbench",
+      "ingredients": [
+        {
+          "name": "Crossbow Limb",
+          "quantity": 1
+        },
+        {
+          "name": "Crossbow Body",
+          "quantity": 1
+        },
+        {
+          "name": "Bow String",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "pro-class-crossbow",
+      "name": "PRO-class Crossbow",
+      "station": "Weapon Workbench",
+      "ingredients": [
+        {
+          "name": "Crossbow Limb",
+          "quantity": 1
+        },
+        {
+          "name": "Sturdy Crossbow Body",
+          "quantity": 1
+        },
+        {
+          "name": "Durable Bowstring",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "bone-crossbow",
+      "name": "Bone Crossbow",
+      "station": "Weapon Workbench",
+      "ingredients": [
+        {
+          "name": "Processed Rib",
+          "quantity": 3
+        },
+        {
+          "name": "Trimmed Bone",
+          "quantity": 1
+        },
+        {
+          "name": "Dried Leather Strap",
+          "quantity": 2
         }
       ]
     }
