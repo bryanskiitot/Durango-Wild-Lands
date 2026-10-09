@@ -1,7 +1,7 @@
 {
   "title": "Confirmed Weapon Recipes",
   "source": "Durango Wildlands Mastersheet PDF — Material Recipe section",
-  "sourceNote": "Ingredient names and quantities are transcribed from the Durango Wildlands Mastersheet weapon recipe table. Crafting levels are omitted because some flattened table columns are ambiguous. The Mastersheet is a community-compiled work in progress, not an official game database. The Improvised One-Handed Knife recipe (Blade, Strap, Stick) was added from the user's in-game confirmation; quantities are shown as 1 each pending explicit quantity verification. The catalog includes additional axe recipes and weapon-part recipes transcribed from the Mastersheet. Rows with apparent naming inconsistencies are kept close to the source and flagged for verification.",
+  "sourceNote": "Ingredient names and quantities are transcribed from the Durango Wildlands Mastersheet weapon recipe table. Crafting levels are omitted because some flattened table columns are ambiguous. The Mastersheet is a community-compiled work in progress, not an official game database. The Improvised One-Handed Knife recipe (Blade, Strap, Stick) was added from the user's in-game confirmation; quantities are shown as 1 each pending explicit quantity verification. The catalog includes additional axe recipes and weapon-part recipes transcribed from the Mastersheet. Rows with apparent naming inconsistencies are kept close to the source and flagged for verification. Bow limb component recipes were also transcribed from the Mastersheet where all ingredient rows were visible.",
   "recipes": [
     {
       "id": "stone-knife-blade",
@@ -520,6 +520,94 @@
         {
           "name": "Trimmed Bone Pillar",
           "quantity": 3
+        },
+        {
+          "name": "Metal Links",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "wooden-bow-limb",
+      "name": "Wooden Bow Limb",
+      "station": "Workbench",
+      "category": "Bow Parts",
+      "ingredients": [
+        {
+          "name": "Long Stick",
+          "quantity": 2
+        },
+        {
+          "name": "Strap",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "bone-bow-limb",
+      "name": "Bone Bow Limb",
+      "station": "Workbench",
+      "category": "Bow Parts",
+      "ingredients": [
+        {
+          "name": "Trimmed Bone",
+          "quantity": 4
+        },
+        {
+          "name": "Rope",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "ironwood-bow-limb",
+      "name": "Ironwood Bow Limb",
+      "station": "Workbench",
+      "category": "Bow Parts",
+      "ingredients": [
+        {
+          "name": "Trimmed Wood Pillar",
+          "quantity": 1
+        },
+        {
+          "name": "Metal Stick",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "skull-bow-limb",
+      "name": "Skull Bow Limb",
+      "station": "Weapon Workbench",
+      "category": "Bow Parts",
+      "ingredients": [
+        {
+          "name": "Processed Rib",
+          "quantity": 2
+        },
+        {
+          "name": "Trimmed Skull",
+          "quantity": 1
+        },
+        {
+          "name": "Metal Stick",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "seagull-bone-bow-limb",
+      "name": "Seagull Bone Bow Limb",
+      "station": "Weapon Workbench",
+      "category": "Bow Parts",
+      "ingredients": [
+        {
+          "name": "Processed Rib",
+          "quantity": 3
+        },
+        {
+          "name": "Tanned Leather",
+          "quantity": 1
         },
         {
           "name": "Metal Links",
