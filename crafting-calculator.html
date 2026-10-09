@@ -84,15 +84,40 @@ function renderConfirmedRecipeSteps(recipe){
  if(!recipe||!Array.isArray(recipe.ingredients)||!recipe.ingredients.length){wrap.style.display='none';list.innerHTML='';summary.textContent='';return;}
  wrap.style.display='block';
  list.innerHTML=recipe.ingredients.map((ingredient,index)=>{
-  const exact=materials.filter(m=>String(m.name||'').trim().toLowerCase()===String(ingredient.name||'').trim().toLowerCase());
-  const options=exact.map(m=>'<option value="'+esc(m.id)+'">'+esc(m.name)+'</option>').join('');
   const id='recipe-material-'+index;
-  return '<div class="component-card"><div class="attrhead"><h3 style="margin:0">'+esc(ingredient.name)+'</h3><span class="tag">× '+esc(ingredient.quantity)+'</span></div><div class="field" style="margin-top:12px"><label for="'+id+'">Material to use</label><select id="'+id+'" data-recipe-material="'+index+'"><option value="">— '+(exact.length?'Choose material':'No exact material match')+' —</option>'+options+'</select></div><div class="recipe-row" style="grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;align-items:start"><div class="field"><label for="recipe-attribute-'+index+'">Attribute</label><select id="recipe-attribute-'+index+'" data-recipe-attribute="'+index+'" disabled><option value="">— Choose material first —</option></select></div><div class="effect-preview" id="recipe-effect-'+index+'" style="margin:0"><strong>Effect</strong><p>Select a material and attribute to see its documented effect.</p></div></div><div class="field" style="margin-top:9px"><label for="recipe-level-'+index+'">Attribute level</label><select id="recipe-level-'+index+'" data-recipe-level="'+index+'" disabled><option value="">— Select attribute first —</option></select></div><div class="component-result" id="recipe-material-preview-'+index+'"><b>Part result</b><div>Choose a material and attribute to preview this ingredient&#39;s contribution.</div></div></div>';
+  return '<div class="component-card"><div class="attrhead"><h3 style="margin:0">'+esc(ingredient.name)+'</h3><span class="tag">× '+esc(ingredient.quantity)+'</span></div><div class="recipe-row" style="grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;margin-top:12px;align-items:start"><div class="field"><label for="recipe-family-'+index+'">Material to use</label><select id="recipe-family-'+index+'" data-recipe-family="'+index+'"><option value="">— Choose material category —</option></select></div><div class="field"><label for="'+id+'">Type</label><select id="'+id+'" data-recipe-material="'+index+'" disabled><option value="">— Choose category first —</option></select></div></div><div class="recipe-row" style="grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;align-items:start"><div class="field"><label for="recipe-attribute-'+index+'">Attribute</label><select id="recipe-attribute-'+index+'" data-recipe-attribute="'+index+'" disabled><option value="">— Choose type first —</option></select></div><div class="effect-preview" id="recipe-effect-'+index+'" style="margin:0"><strong>Effect</strong><p>Select a type and attribute to see its documented effect.</p></div></div><div class="field" style="margin-top:9px"><label for="recipe-level-'+index+'">Attribute level</label><select id="recipe-level-'+index+'" data-recipe-level="'+index+'" disabled><option value="">— Select attribute first —</option></select></div><div class="component-result" id="recipe-material-preview-'+index+'"><b>Part result</b><div>Choose a material type and attribute to preview this ingredient&#39;s contribution.</div></div></div>';
  }).join('');
  summary.textContent=recipe.ingredients.length+' material selection(s), shown in one box per required ingredient. Quantity is kept beside the ingredient name.';
+ function categoryOf(m){
+  const g=String(m.genericName||'').toLowerCase();
+  const n=String(m.name||'').toLowerCase();
+  if(/leather|pelt|hide/.test(g+' '+n))return 'Leather';
+  if(/bone|rib|skull|ivory|horn/.test(g+' '+n))return 'Bone';
+  if(/wood|branch|stick|log|plank|pillar/.test(g+' '+n))return 'Wood';
+  if(/stone|rock|obsidian|marble/.test(g+' '+n))return 'Stone';
+  if(/fiber|fibre|thread|rope|cord|strap|string/.test(g+' '+n))return 'Fiber / Cordage';
+  if(/metal|iron|copper|nail|ore/.test(g+' '+n))return 'Metal';
+  if(/plant|leaf|herb|flower|fruit|vegetable/.test(g+' '+n))return 'Plant';
+  return String(m.genericName||m.type||'Other material');
+ }
+ function fillFamilies(i){
+  const family=$('recipe-family-'+i),type=$('recipe-material-'+i);
+  const cats=[...new Set(materials.map(categoryOf))].sort((a,b)=>a.localeCompare(b));
+  family.innerHTML='<option value="">— Choose material category —</option>'+cats.map(c=>'<option value="'+esc(c)+'">'+esc(c)+'</option>').join('');
+  type.innerHTML='<option value="">— Choose category first —</option>';type.disabled=true;
+ }
+ list.querySelectorAll('select[data-recipe-family]').forEach(el=>{
+  const i=Number(el.dataset.recipeFamily);fillFamilies(i);
+  el.addEventListener('change',()=>{
+   const i=Number(el.dataset.recipeFamily),cat=el.value,type=$('recipe-material-'+i),attrSelect=$('recipe-attribute-'+i),levelSelect=$('recipe-level-'+i);
+   const matches=materials.filter(m=>categoryOf(m)===cat).sort((a,b)=>a.name.localeCompare(b.name));
+   type.innerHTML='<option value="">— Choose '+(cat?esc(cat.toLowerCase())+' type':'category first')+' —</option>'+matches.map(m=>'<option value="'+esc(m.id)+'">'+esc(m.name)+'</option>').join('');
+   type.disabled=!cat||!matches.length;attrSelect.innerHTML='<option value="">— Choose type first —</option>';attrSelect.disabled=true;levelSelect.innerHTML='<option value="">— Select attribute first —</option>';levelSelect.disabled=true;updateRecipeMaterialResult(i);
+  });
+ });
  list.querySelectorAll('select[data-recipe-material]').forEach(el=>el.addEventListener('change',()=>{
   const i=Number(el.dataset.recipeMaterial),m=materials.find(x=>x.id===el.value),attrSelect=$('recipe-attribute-'+i),levelSelect=$('recipe-level-'+i);
-  attrSelect.innerHTML=m?'<option value="">— Choose attribute —</option>'+allAttrs(m).map(a=>'<option value="'+esc(a.name)+'">'+esc(a.name)+'</option>').join(''):'<option value="">— Choose material first —</option>';
+  attrSelect.innerHTML=m?'<option value="">— Choose attribute —</option>'+allAttrs(m).map(a=>'<option value="'+esc(a.name)+'">'+esc(a.name)+'</option>').join(''):'<option value="">— Choose type first —</option>';
   attrSelect.disabled=!m||!allAttrs(m).length;
   levelSelect.innerHTML='<option value="">— Select attribute first —</option>';levelSelect.disabled=true;
   updateRecipeMaterialResult(i);
