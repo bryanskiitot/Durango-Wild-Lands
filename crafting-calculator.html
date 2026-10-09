@@ -112,7 +112,10 @@ function renderConfirmedRecipeSteps(recipe){
   const i=Number(el.dataset.recipeFamily);fillFamilies(i);
   el.addEventListener('change',()=>{
    const i=Number(el.dataset.recipeFamily),materialType=el.value,type=$('recipe-material-'+i),attrSelect=$('recipe-attribute-'+i),levelSelect=$('recipe-level-'+i);
-   const matches=materials.filter(m=>String(m.genericName||'').trim().toLowerCase()===String(materialType||'').trim().toLowerCase()).sort((a,b)=>a.name.localeCompare(b.name));
+   const matches=materials.filter(m=>{
+    const chosen=String(materialType||'').trim().toLowerCase(),generic=String(m.genericName||'').trim().toLowerCase(),materialName=String(m.name||'').trim().toLowerCase();
+    return generic===chosen||(!generic&&materialName.includes(chosen));
+   }).sort((a,b)=>a.name.localeCompare(b.name));
    type.innerHTML='<option value="">— Choose '+(materialType?esc(materialType.toLowerCase())+' material':'material type first')+' —</option>'+matches.map(m=>'<option value="'+esc(m.id)+'">'+esc(m.name)+'</option>').join('');
    type.disabled=!materialType||!matches.length;attrSelect.innerHTML='<option value="">— Choose type first —</option>';attrSelect.disabled=true;levelSelect.innerHTML='<option value="">— Select attribute first —</option>';levelSelect.disabled=true;updateRecipeMaterialResult(i);
   });
