@@ -37,7 +37,7 @@ function allAttrs(m){
    const item=typeof raw==='string'?{name:raw}:raw;
    if(!item||!item.name)continue;
    const name=String(item.name).trim();if(!name||seen.has(name))continue;seen.add(name);
-   out.push({name,level:Number(item.level)||1,kind,source:field});
+   out.push({name,level:item.level==null||item.level===''?null:Number(item.level),kind,source:field});
   }
  }
  return out;
