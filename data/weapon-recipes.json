@@ -1,0 +1,128 @@
+{
+  "title": "Confirmed Weapon Recipes",
+  "source": "Durango Wildlands Mastersheet PDF — Material Recipe section",
+  "sourceNote": "Ingredient names and quantities are transcribed from the Mastersheet. Crafting levels are omitted because the flattened table extraction makes some level columns ambiguous. The Mastersheet is a community-compiled work in progress, not an official game database.",
+  "recipes": [
+    {
+      "id": "stone-knife-blade",
+      "name": "Stone Knife Blade",
+      "station": "Workbench",
+      "ingredients": [
+        {
+          "name": "Large Stone Chunk",
+          "quantity": 1
+        },
+        {
+          "name": "Stick",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "bone-knife-blade",
+      "name": "Bone Knife Blade",
+      "station": "Workbench",
+      "ingredients": [
+        {
+          "name": "Trimmed Bone",
+          "quantity": 3
+        },
+        {
+          "name": "Nail",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "obsidian-blade",
+      "name": "Obsidian Blade",
+      "station": "Workbench",
+      "ingredients": [
+        {
+          "name": "Obsidian",
+          "quantity": 4
+        },
+        {
+          "name": "Trimmed Wood Pillar",
+          "quantity": 2
+        },
+        {
+          "name": "Bone Nail",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "metal-blade",
+      "name": "Metal Blade",
+      "station": "Workbench",
+      "ingredients": [
+        {
+          "name": "Metal Chunk",
+          "quantity": 1
+        },
+        {
+          "name": "Trimmed Bone",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "standard-one-handed-knife",
+      "name": "Standard One-handed Knife",
+      "station": "Workbench",
+      "ingredients": [
+        {
+          "name": "Knife Blade",
+          "quantity": 1
+        },
+        {
+          "name": "Rope",
+          "quantity": 2
+        },
+        {
+          "name": "Handle",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "improved-one-handed-knife",
+      "name": "Improved One-handed knife",
+      "station": "Workbench",
+      "ingredients": [
+        {
+          "name": "Knife Blade",
+          "quantity": 1
+        },
+        {
+          "name": "Tang",
+          "quantity": 1
+        },
+        {
+          "name": "Improved Handle",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "pro-class-one-handed-knife",
+      "name": "PRO-class One-handed knife",
+      "station": "Weapon Workbench",
+      "ingredients": [
+        {
+          "name": "Knife Blade",
+          "quantity": 1
+        },
+        {
+          "name": "Tang",
+          "quantity": 1
+        },
+        {
+          "name": "Shaft",
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}
