@@ -1,8 +1,27 @@
 {
   "title": "Confirmed Weapon Recipes",
   "source": "Durango Wildlands Mastersheet PDF — Material Recipe section",
-  "sourceNote": "Ingredient names and quantities are transcribed from the Durango Wildlands Mastersheet weapon recipe table. Crafting levels are omitted because some flattened table columns are ambiguous. The Mastersheet is a community-compiled work in progress, not an official game database.",
+  "sourceNote": "Ingredient names and quantities are transcribed from the Durango Wildlands Mastersheet weapon recipe table. Crafting levels are omitted because some flattened table columns are ambiguous. The Mastersheet is a community-compiled work in progress, not an official game database. The Improvised One-Handed Knife recipe (Blade, Strap, Stick) was added from the user's in-game confirmation; quantities are shown as 1 each pending explicit quantity verification.",
   "recipes": [
+    {
+      "id": "improvised-one-handed-knife",
+      "name": "Improvised One-Handed Knife",
+      "station": "Not recorded",
+      "ingredients": [
+        {
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "name": "Strap",
+          "quantity": 1
+        },
+        {
+          "name": "Stick",
+          "quantity": 1
+        }
+      ]
+    },
     {
       "id": "stone-knife-blade",
       "name": "Stone Knife Blade",
