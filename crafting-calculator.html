@@ -19,7 +19,7 @@
 <section class="panel full"><h2>4. Processing references</h2><div id="processing" class="attrs"><div class="empty">Loading processing references…</div></div></section>
 </div><div class="foot">Durango: Wild Lands Encyclopedia · Shared data files · Built as an incremental calculator prototype.</div></main>
 <script>
-const RESOURCE_FILES=['data/resources/animal.json','data/resources/dino.json','data/resources/trees.json','data/resources/bushes.json','data/resources/plants.json','data/resources/rocks.json','data/resources/ores.json','data/resources/gems.json','data/resources/meat.json','data/resources/fruits.json','data/resources/veggies.json','data/resources/cooked.json','data/resources/drops.json'];
+const RESOURCE_FILES=['data/resources/animal.json','data/resources/dino.json','data/resources/tree.json','data/resources/bush.json','data/resources/plant.json','data/resources/rocks.json','data/resources/ores.json','data/resources/gems.json','data/resources/meat.json','data/resources/fruits.json','data/resources/veggies.json','data/resources/cooked.json','data/resources/misc.json','data/resources/drops/dino-drops-01.json','data/resources/drops/dino-drops-02.json','data/resources/drops/dino-drops-03.json','data/resources/drops/dino-drops-04.json','data/resources/drops/dino-drops-05.json','data/resources/drops/dino-drops-06.json'];
 let materials=[],attributes={},processing=[],selected=[null,null,null,null];
 const $=id=>document.getElementById(id);
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
