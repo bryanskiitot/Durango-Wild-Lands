@@ -147,6 +147,7 @@ async function loadWeaponRecipes(){const select=$('weaponRecipeSelect'),box=$('w
  const n=String(r.name||'').toLowerCase(),id=String(r.id||'').toLowerCase(),cat=String(r.category||'');
  if(cat==='Weapon Parts')return 'Weapon Parts';
  if(cat==='Bow Parts')return 'Bow';
+ if(cat==='Crossbow Parts')return 'Crossbow';
  if(/crossbow/.test(n+' '+id))return 'Crossbow';
  if(/bow/.test(n+' '+id))return 'Bow';
  if(/two-handed|two handed|large axe/.test(n+' '+id))return 'Two-handed Axe';
