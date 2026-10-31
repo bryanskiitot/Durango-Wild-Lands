@@ -165,7 +165,8 @@
           "name": "Metal Links",
           "quantity": 1
         }
-      ]
+      ],
+      "sourcePage": 33
     },
     {
       "id": "bone-axe-head",
@@ -181,7 +182,8 @@
           "name": "Nail",
           "quantity": 2
         }
-      ]
+      ],
+      "sourcePage": 33
     },
     {
       "id": "bone-bow-limb",
@@ -197,7 +199,8 @@
           "name": "Rope",
           "quantity": 2
         }
-      ]
+      ],
+      "sourcePage": 33
     },
     {
       "id": "bone-crossbow",
@@ -217,7 +220,8 @@
           "quantity": 2
         }
       ],
-      "category": "Weapon / Tool"
+      "category": "Weapon / Tool",
+      "sourcePage": 33
     },
     {
       "id": "bone-knife-blade",
@@ -233,7 +237,8 @@
           "quantity": 2
         }
       ],
-      "category": "Weapon / Tool"
+      "category": "Weapon / Tool",
+      "sourcePage": 33
     },
     {
       "id": "bone-saw-axe-head",
@@ -370,7 +375,8 @@
           "quantity": 1
         }
       ],
-      "sourceNote": "Kept separate from Ironwood Bow Limb because the Mastersheet lists both names."
+      "sourceNote": "Kept separate from Ironwood Bow Limb because the Mastersheet lists both names.",
+      "sourcePage": 33
     },
     {
       "id": "bowstring",
@@ -550,7 +556,8 @@
           "name": "Leather Strap",
           "quantity": 2
         }
-      ]
+      ],
+      "sourcePage": 33
     },
     {
       "id": "debris-process-wood-bone",
@@ -610,7 +617,8 @@
           "name": "Dried Leather Strap",
           "quantity": 4
         }
-      ]
+      ],
+      "sourcePage": 33
     },
     {
       "id": "durable-bowstring",
@@ -754,7 +762,8 @@
           "name": "Cord",
           "quantity": 2
         }
-      ]
+      ],
+      "sourcePage": 33
     },
     {
       "id": "greasy-thread",
@@ -814,7 +823,8 @@
           "quantity": 1
         }
       ],
-      "category": "Weapon / Tool"
+      "category": "Weapon / Tool",
+      "sourcePage": 33
     },
     {
       "id": "improved-crossbow",
@@ -834,7 +844,8 @@
           "quantity": 1
         }
       ],
-      "category": "Weapon / Tool"
+      "category": "Weapon / Tool",
+      "sourcePage": 33
     },
     {
       "id": "improved-one-handed-knife",
@@ -854,7 +865,8 @@
           "quantity": 1
         }
       ],
-      "category": "Weapon / Tool"
+      "category": "Weapon / Tool",
+      "sourcePage": 33
     },
     {
       "id": "improved-one-handed-axe-source-label",
@@ -875,7 +887,8 @@
           "quantity": 1
         }
       ],
-      "sourceNote": "The Mastersheet labels this row 'Improved One-handed knife' even though its component is Axe Head; retained as a source label pending verification."
+      "sourceNote": "The Mastersheet labels this row 'Improved One-handed knife' even though its component is Axe Head; retained as a source label pending verification.",
+      "sourcePage": 33
     },
     {
       "id": "improved-two-handed-axe-source-label",
@@ -896,7 +909,8 @@
           "quantity": 1
         }
       ],
-      "sourceNote": "The Mastersheet labels this row 'Improved Two-handed knife' despite listing Large Axe Head; retained as written pending verification."
+      "sourceNote": "The Mastersheet labels this row 'Improved Two-handed knife' despite listing Large Axe Head; retained as written pending verification.",
+      "sourcePage": 33
     },
     {
       "id": "improvised-one-handed-axe",
@@ -917,7 +931,8 @@
           "quantity": 1
         }
       ],
-      "sourceNote": "Mastersheet row; station/level shown as 0 or blank."
+      "sourceNote": "Mastersheet row; station/level shown as 0 or blank.",
+      "sourcePage": 33
     },
     {
       "id": "improvised-two-handed-axe",
@@ -938,7 +953,8 @@
           "quantity": 1
         }
       ],
-      "sourceNote": "Mastersheet row; station/level shown as 0 or blank."
+      "sourceNote": "Mastersheet row; station/level shown as 0 or blank.",
+      "sourcePage": 33
     },
     {
       "id": "iron-thunderbird-axe-head",
@@ -978,7 +994,8 @@
           "name": "Metal Stick",
           "quantity": 1
         }
-      ]
+      ],
+      "sourcePage": 33
     },
     {
       "id": "journeyman-workbench",
@@ -1482,7 +1499,8 @@
           "quantity": 3
         }
       ],
-      "category": "Weapon / Tool"
+      "category": "Weapon / Tool",
+      "sourcePage": 33
     },
     {
       "id": "metal-saw",
@@ -1542,7 +1560,8 @@
           "name": "Metal Chunk",
           "quantity": 1
         }
-      ]
+      ],
+      "sourcePage": 33
     },
     {
       "id": "obsidian-blade",
@@ -1562,7 +1581,8 @@
           "quantity": 3
         }
       ],
-      "category": "Weapon / Tool"
+      "category": "Weapon / Tool",
+      "sourcePage": 33
     },
     {
       "id": "oil-tanned-leather",
@@ -1754,7 +1774,8 @@
           "quantity": 1
         }
       ],
-      "category": "Weapon / Tool"
+      "category": "Weapon / Tool",
+      "sourcePage": 33
     },
     {
       "id": "pro-class-crossbow",
@@ -1774,7 +1795,8 @@
           "quantity": 1
         }
       ],
-      "category": "Weapon / Tool"
+      "category": "Weapon / Tool",
+      "sourcePage": 33
     },
     {
       "id": "pro-class-one-handed-knife",
@@ -1794,7 +1816,8 @@
           "quantity": 1
         }
       ],
-      "category": "Weapon / Tool"
+      "category": "Weapon / Tool",
+      "sourcePage": 33
     },
     {
       "id": "pro-class-one-handed-axe-source-label",
@@ -1815,7 +1838,8 @@
           "quantity": 1
         }
       ],
-      "sourceNote": "The Mastersheet labels this row 'PRO-class One-handed knife' even though its component is Axe Head; retained as a source label pending verification."
+      "sourceNote": "The Mastersheet labels this row 'PRO-class One-handed knife' even though its component is Axe Head; retained as a source label pending verification.",
+      "sourcePage": 33
     },
     {
       "id": "pro-class-two-handed-axe-source-label",
@@ -1836,7 +1860,8 @@
           "quantity": 1
         }
       ],
-      "sourceNote": "The Mastersheet labels this row 'PRO-class Two-handed knife' despite listing Large Axe Head; retained as written pending verification."
+      "sourceNote": "The Mastersheet labels this row 'PRO-class Two-handed knife' despite listing Large Axe Head; retained as written pending verification.",
+      "sourcePage": 33
     },
     {
       "id": "quality-marble-floor",
@@ -1896,7 +1921,8 @@
           "name": "Metal Links",
           "quantity": 1
         }
-      ]
+      ],
+      "sourcePage": 33
     },
     {
       "id": "seagull-bone-crossbow-limb-ii",
@@ -1916,7 +1942,8 @@
           "name": "Metal Accessories",
           "quantity": 1
         }
-      ]
+      ],
+      "sourcePage": 33
     },
     {
       "id": "simple-kiln",
@@ -1964,7 +1991,8 @@
           "name": "Metal Stick",
           "quantity": 1
         }
-      ]
+      ],
+      "sourcePage": 33
     },
     {
       "id": "smelt-metal",
@@ -2004,7 +2032,8 @@
           "quantity": 1
         }
       ],
-      "category": "Weapon / Tool"
+      "category": "Weapon / Tool",
+      "sourcePage": 33
     },
     {
       "id": "standard-one-handed-axe",
@@ -2024,7 +2053,8 @@
           "name": "Handle",
           "quantity": 1
         }
-      ]
+      ],
+      "sourcePage": 33
     },
     {
       "id": "standard-one-handed-knife",
@@ -2044,7 +2074,8 @@
           "quantity": 1
         }
       ],
-      "category": "Weapon / Tool"
+      "category": "Weapon / Tool",
+      "sourcePage": 33
     },
     {
       "id": "standard-two-handed-axe",
@@ -2064,7 +2095,8 @@
           "name": "Handle",
           "quantity": 1
         }
-      ]
+      ],
+      "sourcePage": 33
     },
     {
       "id": "standing-oil-lamp",
@@ -2108,7 +2140,8 @@
           "name": "Stick",
           "quantity": 4
         }
-      ]
+      ],
+      "sourcePage": 33
     },
     {
       "id": "stone-knife-blade",
@@ -2124,7 +2157,8 @@
           "quantity": 4
         }
       ],
-      "category": "Weapon / Tool"
+      "category": "Weapon / Tool",
+      "sourcePage": 33
     },
     {
       "id": "stove",
@@ -2428,7 +2462,8 @@
           "name": "Strap",
           "quantity": 1
         }
-      ]
+      ],
+      "sourcePage": 33
     },
     {
       "id": "wooden-crossbow",
@@ -2448,7 +2483,8 @@
           "quantity": 4
         }
       ],
-      "category": "Weapon / Tool"
+      "category": "Weapon / Tool",
+      "sourcePage": 33
     },
     {
       "id": "wooden-shelf",
