@@ -36,6 +36,26 @@
       "note": "PDF p.34"
     },
     {
+      "id": "alum-tanned-leather",
+      "name": "Alum-tanned Leather",
+      "category": "Processing",
+      "station": "Drying Rack",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Dry Leather or Pelt",
+          "quantity": 1
+        },
+        {
+          "name": "Alum",
+          "quantity": 2
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; base material plus additional ingredients"
+    },
+    {
       "id": "angled-metal-axe-head",
       "name": "Angled Metal Axe Head",
       "category": "Weapon Part",
@@ -56,7 +76,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -80,7 +100,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -196,7 +216,8 @@
           "name": "Dried Leather Strap",
           "quantity": 2
         }
-      ]
+      ],
+      "category": "Weapon / Tool"
     },
     {
       "id": "bone-knife-blade",
@@ -211,7 +232,8 @@
           "name": "Nail",
           "quantity": 2
         }
-      ]
+      ],
+      "category": "Weapon / Tool"
     },
     {
       "id": "bone-saw-axe-head",
@@ -234,7 +256,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -258,7 +280,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -282,7 +304,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -306,7 +328,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -330,7 +352,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -367,8 +389,68 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
+    },
+    {
+      "id": "brass-alloy",
+      "name": "Brass",
+      "category": "Metal Processing",
+      "station": "Kiln",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Zinc",
+          "quantity": 1
+        },
+        {
+          "name": "Copper",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; zinc is identified as the main material"
+    },
+    {
+      "id": "breathable-thread",
+      "name": "Breathable Thread",
+      "category": "Processing",
+      "station": "Loom",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Flax",
+          "quantity": 4
+        },
+        {
+          "name": "Oil",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; Swamp note in source"
+    },
+    {
+      "id": "bronze-alloy",
+      "name": "Bronze",
+      "category": "Metal Processing",
+      "station": "Kiln",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Tin",
+          "quantity": 1
+        },
+        {
+          "name": "Copper",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; tin is identified as the main material"
     },
     {
       "id": "bug-based-antiserum",
@@ -395,6 +477,42 @@
       "note": "PDF p.34"
     },
     {
+      "id": "carbonized-metal",
+      "name": "Carbonized Metal",
+      "category": "Processing",
+      "station": "Kiln",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Metal input material",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; additional ingredient marked 'To be updated' in source"
+    },
+    {
+      "id": "compress-wood-bone",
+      "name": "Compress (Wood/Bone)",
+      "category": "Processing",
+      "station": "Workbench",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Wood/Bone input material",
+          "quantity": 1
+        },
+        {
+          "name": "Water",
+          "quantity": 2
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; input material is one eligible wood/bone item"
+    },
+    {
       "id": "crossbow-body",
       "name": "Crossbow Body",
       "category": "Weapon Part",
@@ -411,7 +529,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -433,6 +551,46 @@
           "quantity": 2
         }
       ]
+    },
+    {
+      "id": "debris-process-wood-bone",
+      "name": "Debris (Wood/Bone)",
+      "category": "Processing",
+      "station": "Workbench",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Wood/Bone input material",
+          "quantity": 1
+        },
+        {
+          "name": "Glass",
+          "quantity": 2
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; input material is one eligible wood/bone item"
+    },
+    {
+      "id": "desulfurized-metal",
+      "name": "Desulfurized Metal",
+      "category": "Processing",
+      "station": "Kiln",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Metal input material",
+          "quantity": 1
+        },
+        {
+          "name": "Clam",
+          "quantity": 2
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; input material is one eligible metal item"
     },
     {
       "id": "dual-layered-crossbow-limb",
@@ -471,8 +629,24 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
+    },
+    {
+      "id": "durable-fabric",
+      "name": "Durable Fabric",
+      "category": "Processing",
+      "station": "Loom",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Strong Thread",
+          "quantity": 3
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; Tough Fiber +3"
     },
     {
       "id": "expert-workbench",
@@ -503,6 +677,66 @@
       "note": "PDF p.34; source columns flattened"
     },
     {
+      "id": "fabric",
+      "name": "Fabric",
+      "category": "Processing",
+      "station": "Loom",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Thread",
+          "quantity": 3
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; inherits ingredient attribute"
+    },
+    {
+      "id": "fiber-tanned-leather",
+      "name": "Fiber-tanned Leather",
+      "category": "Processing",
+      "station": "Drying Rack",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Dry Leather or Pelt",
+          "quantity": 1
+        },
+        {
+          "name": "Leaf",
+          "quantity": 2
+        },
+        {
+          "name": "Bark",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; base material plus additional ingredients"
+    },
+    {
+      "id": "fine-gem-polishing",
+      "name": "Fine Gem Polishing",
+      "category": "Processing",
+      "station": "Workbench",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Gem input material",
+          "quantity": 1
+        },
+        {
+          "name": "Seashell",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; input material is one eligible gem"
+    },
+    {
       "id": "giant-razor-blade",
       "name": "Giant Razor Blade",
       "station": "Kiln",
@@ -523,6 +757,26 @@
       ]
     },
     {
+      "id": "greasy-thread",
+      "name": "Greasy Thread",
+      "category": "Processing",
+      "station": "Loom",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Flax",
+          "quantity": 4
+        },
+        {
+          "name": "Charcoal",
+          "quantity": 2
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; Snowfield note in source"
+    },
+    {
       "id": "handle",
       "name": "Handle",
       "category": "Weapon / Tool",
@@ -539,7 +793,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -559,7 +813,8 @@
           "name": "Bow String",
           "quantity": 1
         }
-      ]
+      ],
+      "category": "Weapon / Tool"
     },
     {
       "id": "improved-crossbow",
@@ -578,7 +833,8 @@
           "name": "Bow String",
           "quantity": 1
         }
-      ]
+      ],
+      "category": "Weapon / Tool"
     },
     {
       "id": "improved-one-handed-knife",
@@ -597,7 +853,8 @@
           "name": "Improved Handle",
           "quantity": 1
         }
-      ]
+      ],
+      "category": "Weapon / Tool"
     },
     {
       "id": "improved-one-handed-axe-source-label",
@@ -704,7 +961,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -804,7 +1061,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -828,7 +1085,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -848,7 +1105,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -872,7 +1129,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -896,7 +1153,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -944,7 +1201,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -1020,7 +1277,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -1040,7 +1297,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -1064,8 +1321,100 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
+    },
+    {
+      "id": "lava-processed-metal",
+      "name": "Lava-Processed Metal",
+      "category": "Processing",
+      "station": "Kiln",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Metal input material",
+          "quantity": 1
+        },
+        {
+          "name": "Lava",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; input material is one eligible metal item"
+    },
+    {
+      "id": "leaded-bronze-alloy",
+      "name": "Leaded Bronze Alloy",
+      "category": "Metal Processing",
+      "station": "Kiln",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Copper",
+          "quantity": 2
+        },
+        {
+          "name": "Lead",
+          "quantity": 1
+        },
+        {
+          "name": "Tin",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22"
+    },
+    {
+      "id": "marble-chair-luxurious-4",
+      "name": "Marble Chair (Luxurious 4)",
+      "category": "Furniture",
+      "station": "Not listed",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Processed Marble",
+          "quantity": 4
+        },
+        {
+          "name": "Trimmed Wood Pillar",
+          "quantity": 2
+        },
+        {
+          "name": "Metal Nail",
+          "quantity": 4
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "marble-table-luxurious-6",
+      "name": "Marble Table (Luxurious 6)",
+      "category": "Furniture",
+      "station": "Not listed",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Processed Marble",
+          "quantity": 8
+        },
+        {
+          "name": "Trimmed Wood Pillar",
+          "quantity": 4
+        },
+        {
+          "name": "Metal Nail",
+          "quantity": 8
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
     },
     {
       "id": "medical-lab",
@@ -1132,7 +1481,8 @@
           "name": "Trimmed Bone",
           "quantity": 3
         }
-      ]
+      ],
+      "category": "Weapon / Tool"
     },
     {
       "id": "metal-saw",
@@ -1155,7 +1505,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -1179,7 +1529,7 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
     },
     {
@@ -1211,7 +1561,48 @@
           "name": "Bone Nail",
           "quantity": 3
         }
-      ]
+      ],
+      "category": "Weapon / Tool"
+    },
+    {
+      "id": "oil-tanned-leather",
+      "name": "Oil-tanned Leather",
+      "category": "Processing",
+      "station": "Drying Rack",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Dry Leather or Pelt",
+          "quantity": 1
+        },
+        {
+          "name": "Oil",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; base material plus additional ingredients"
+    },
+    {
+      "id": "ore-refining",
+      "name": "Ore Refining",
+      "category": "Processing",
+      "station": "Kiln",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Ore input material",
+          "quantity": 1
+        },
+        {
+          "name": "Charcoal",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; ore inherits its ingredient attribute and receives Metal Tag"
     },
     {
       "id": "oven",
@@ -1326,6 +1717,26 @@
       "note": "PDF p.34"
     },
     {
+      "id": "precision-process-wood-bone",
+      "name": "Precision-process (Wood/Bone)",
+      "category": "Processing",
+      "station": "Workbench",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Wood/Bone input material",
+          "quantity": 1
+        },
+        {
+          "name": "Salt",
+          "quantity": 2
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; input material is one eligible wood/bone item"
+    },
+    {
       "id": "pro-class-bow",
       "name": "PRO-class Bow",
       "station": "Weapon Workbench",
@@ -1342,7 +1753,8 @@
           "name": "Durable Bowstring",
           "quantity": 1
         }
-      ]
+      ],
+      "category": "Weapon / Tool"
     },
     {
       "id": "pro-class-crossbow",
@@ -1361,7 +1773,8 @@
           "name": "Durable Bowstring",
           "quantity": 1
         }
-      ]
+      ],
+      "category": "Weapon / Tool"
     },
     {
       "id": "pro-class-one-handed-knife",
@@ -1380,7 +1793,8 @@
           "name": "Shaft",
           "quantity": 1
         }
-      ]
+      ],
+      "category": "Weapon / Tool"
     },
     {
       "id": "pro-class-one-handed-axe-source-label",
@@ -1443,6 +1857,26 @@
       "source": "Mastersheet PDF",
       "sourcePage": 34,
       "note": "PDF p.34"
+    },
+    {
+      "id": "rough-gem-polishing",
+      "name": "Rough Gem Polishing",
+      "category": "Processing",
+      "station": "Workbench",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Gem input material",
+          "quantity": 1
+        },
+        {
+          "name": "Horseshoe Crab Shell",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; input material is one eligible gem"
     },
     {
       "id": "seagull-bone-bow-limb",
@@ -1533,6 +1967,26 @@
       ]
     },
     {
+      "id": "smelt-metal",
+      "name": "Smelt Metal",
+      "category": "Processing",
+      "station": "Kiln",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Metal input material",
+          "quantity": 1
+        },
+        {
+          "name": "Charcoal",
+          "quantity": 2
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; input material is one eligible metal item"
+    },
+    {
       "id": "standard-bow",
       "name": "Standard Bow",
       "station": "Workbench",
@@ -1549,7 +2003,8 @@
           "name": "Long Strap",
           "quantity": 1
         }
-      ]
+      ],
+      "category": "Weapon / Tool"
     },
     {
       "id": "standard-one-handed-axe",
@@ -1588,7 +2043,8 @@
           "name": "Handle",
           "quantity": 1
         }
-      ]
+      ],
+      "category": "Weapon / Tool"
     },
     {
       "id": "standard-two-handed-axe",
@@ -1667,7 +2123,8 @@
           "name": "Stick",
           "quantity": 4
         }
-      ]
+      ],
+      "category": "Weapon / Tool"
     },
     {
       "id": "stove",
@@ -1702,6 +2159,42 @@
       "note": "PDF p.34"
     },
     {
+      "id": "strong-fabric",
+      "name": "Strong Fabric",
+      "category": "Processing",
+      "station": "Loom",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Strong Thread",
+          "quantity": 3
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; inherits ingredient attribute"
+    },
+    {
+      "id": "strong-thread",
+      "name": "Strong Thread",
+      "category": "Processing",
+      "station": "Loom",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Flax or Cotton",
+          "quantity": 4
+        },
+        {
+          "name": "Stick",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; ingredient label kept as source's alternative"
+    },
+    {
       "id": "sturdy-crossbow-body",
       "name": "Sturdy Crossbow Body",
       "category": "Weapon Part",
@@ -1718,8 +2211,28 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
+    },
+    {
+      "id": "surface-process-wood-bone",
+      "name": "Surface-process (Wood/Bone)",
+      "category": "Processing",
+      "station": "Workbench",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Wood/Bone input material",
+          "quantity": 1
+        },
+        {
+          "name": "Sap",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; input material is one eligible wood/bone item"
     },
     {
       "id": "survival-food",
@@ -1766,6 +2279,22 @@
       "note": "PDF p.34; source columns flattened"
     },
     {
+      "id": "thick-fabric",
+      "name": "Thick Fabric",
+      "category": "Processing",
+      "station": "Loom",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Strong Thread",
+          "quantity": 3
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; High Density +4"
+    },
+    {
       "id": "thorny-spine-hammer-head-ii",
       "name": "Thorny Spine Hammer Head II",
       "category": "Weapon Part",
@@ -1786,8 +2315,28 @@
         }
       ],
       "source": "Mastersheet PDF",
-      "sourcePage": 34,
+      "sourcePage": 33,
       "note": "PDF p.33"
+    },
+    {
+      "id": "water-proofed-fabric",
+      "name": "Water-proofed Fabric",
+      "category": "Processing",
+      "station": "Loom",
+      "maxLevel": null,
+      "ingredients": [
+        {
+          "name": "Fabric",
+          "quantity": 1
+        },
+        {
+          "name": "Oil",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 22,
+      "note": "PDF p.22; inherits ingredient attribute and adds Waterproof Tag"
     },
     {
       "id": "weapon-workbench",
@@ -1898,7 +2447,8 @@
           "name": "Nail",
           "quantity": 4
         }
-      ]
+      ],
+      "category": "Weapon / Tool"
     },
     {
       "id": "wooden-shelf",
