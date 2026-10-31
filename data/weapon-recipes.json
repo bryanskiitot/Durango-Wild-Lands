@@ -1,27 +1,157 @@
 {
   "title": "Confirmed Weapon Recipes",
-  "source": "Durango Wildlands Mastersheet PDF — Material Recipe section",
-  "sourceNote": "Ingredient names and quantities are transcribed from the Durango Wildlands Mastersheet weapon recipe table. Crafting levels are omitted where flattened table columns are ambiguous. The Mastersheet is a community-compiled work in progress, not an official game database. Rows with apparent naming inconsistencies are retained close to the source and flagged. Weapon-part recipes are included when their listed ingredients were visible in the source.",
+  "source": "Durango Wildlands Mastersheet PDF, updated upload, recipe table pages 33–34; processing reference page 22; attribute tables pages 13–14 and 20–24.",
+  "sourceNote": "Community-compiled work in progress. Ingredient names and quantities follow the PDF. Unclear or flattened rows are flagged in notes. Blank data is not assumed to be zero.",
   "recipes": [
     {
-      "id": "stone-knife-blade",
-      "name": "Stone Knife Blade",
-      "station": "Workbench",
+      "id": "advanced-kiln",
+      "name": "Advanced Kiln",
+      "category": "Furniture / Workstation",
+      "station": "Not listed",
+      "maxLevel": 60,
       "ingredients": [
         {
-          "name": "Large Stone Chunk",
-          "quantity": 1
+          "name": "Processed Large Stone",
+          "quantity": 4
         },
         {
-          "name": "Stick",
+          "name": "Solid Plank",
+          "quantity": 3
+        },
+        {
+          "name": "Nail",
+          "quantity": 6
+        },
+        {
+          "name": "Glue",
+          "quantity": 8
+        },
+        {
+          "name": "Charcoal",
           "quantity": 4
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "angled-metal-axe-head",
+      "name": "Angled Metal Axe Head",
+      "category": "Weapon Part",
+      "station": "Kiln",
+      "maxLevel": 59,
+      "ingredients": [
+        {
+          "name": "High Purity Metal",
+          "quantity": 2
+        },
+        {
+          "name": "Metal Links",
+          "quantity": 2
+        },
+        {
+          "name": "Cord",
+          "quantity": 3
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "angled-metal-axe-head-ii",
+      "name": "Angled Metal Axe Head II",
+      "category": "Weapon Part",
+      "station": "Kiln",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "High Purity Metal",
+          "quantity": 4
+        },
+        {
+          "name": "Cord",
+          "quantity": 4
+        },
+        {
+          "name": "Metal Accessories",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "anti-bleeding-agent",
+      "name": "Anti-Bleeding Agent (20 Min)",
+      "category": "Medicine",
+      "station": "Medical Lab",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Flower",
+          "quantity": 3
+        },
+        {
+          "name": "Leaf",
+          "quantity": 3
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "basic-workbench",
+      "name": "Basic Workbench",
+      "category": "Furniture / Workstation",
+      "station": "Not listed",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Plank Shape",
+          "quantity": 2
+        },
+        {
+          "name": "Pillar Shape",
+          "quantity": 2
+        },
+        {
+          "name": "Strap",
+          "quantity": 6
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "bent-bone-knife-blade",
+      "name": "Bent Bone Knife Blade",
+      "station": "Weapon Workbench",
+      "category": "Weapon Parts",
+      "ingredients": [
+        {
+          "name": "Processed Bone",
+          "quantity": 5
+        },
+        {
+          "name": "Trimmed Bone Pillar",
+          "quantity": 3
+        },
+        {
+          "name": "Metal Links",
+          "quantity": 1
         }
       ]
     },
     {
-      "id": "bone-knife-blade",
-      "name": "Bone Knife Blade",
+      "id": "bone-axe-head",
+      "name": "Bone Axe Head",
       "station": "Workbench",
+      "category": "Weapon Parts",
       "ingredients": [
         {
           "name": "Trimmed Bone",
@@ -34,150 +164,18 @@
       ]
     },
     {
-      "id": "obsidian-blade",
-      "name": "Obsidian Blade",
+      "id": "bone-bow-limb",
+      "name": "Bone Bow Limb",
       "station": "Workbench",
+      "category": "Bow Parts",
       "ingredients": [
-        {
-          "name": "Obsidian",
-          "quantity": 4
-        },
-        {
-          "name": "Trimmed Wood Pillar",
-          "quantity": 2
-        },
-        {
-          "name": "Bone Nail",
-          "quantity": 3
-        }
-      ]
-    },
-    {
-      "id": "metal-blade",
-      "name": "Metal Blade",
-      "station": "Workbench",
-      "ingredients": [
-        {
-          "name": "Metal Chunk",
-          "quantity": 1
-        },
         {
           "name": "Trimmed Bone",
-          "quantity": 3
-        }
-      ]
-    },
-    {
-      "id": "standard-one-handed-knife",
-      "name": "Standard One-handed Knife",
-      "station": "Workbench",
-      "ingredients": [
-        {
-          "name": "Knife Blade",
-          "quantity": 1
+          "quantity": 4
         },
         {
           "name": "Rope",
           "quantity": 2
-        },
-        {
-          "name": "Handle",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "improved-one-handed-knife",
-      "name": "Improved One-handed knife",
-      "station": "Workbench",
-      "ingredients": [
-        {
-          "name": "Knife Blade",
-          "quantity": 1
-        },
-        {
-          "name": "Tang",
-          "quantity": 1
-        },
-        {
-          "name": "Improved Handle",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "pro-class-one-handed-knife",
-      "name": "PRO-class One-handed knife",
-      "station": "Weapon Workbench",
-      "ingredients": [
-        {
-          "name": "Knife Blade",
-          "quantity": 1
-        },
-        {
-          "name": "Tang",
-          "quantity": 1
-        },
-        {
-          "name": "Shaft",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "wooden-crossbow",
-      "name": "Wooden Crossbow",
-      "station": "Workbench",
-      "ingredients": [
-        {
-          "name": "Trimmed Wood Pillar",
-          "quantity": 1
-        },
-        {
-          "name": "Cord",
-          "quantity": 1
-        },
-        {
-          "name": "Nail",
-          "quantity": 4
-        }
-      ]
-    },
-    {
-      "id": "improved-crossbow",
-      "name": "Improved Crossbow",
-      "station": "Workbench",
-      "ingredients": [
-        {
-          "name": "Crossbow Limb",
-          "quantity": 1
-        },
-        {
-          "name": "Crossbow Body",
-          "quantity": 1
-        },
-        {
-          "name": "Bow String",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "pro-class-crossbow",
-      "name": "PRO-class Crossbow",
-      "station": "Weapon Workbench",
-      "ingredients": [
-        {
-          "name": "Crossbow Limb",
-          "quantity": 1
-        },
-        {
-          "name": "Sturdy Crossbow Body",
-          "quantity": 1
-        },
-        {
-          "name": "Durable Bowstring",
-          "quantity": 1
         }
       ]
     },
@@ -201,12 +199,53 @@
       ]
     },
     {
-      "id": "standard-bow",
-      "name": "Standard Bow",
+      "id": "bone-knife-blade",
+      "name": "Bone Knife Blade",
       "station": "Workbench",
       "ingredients": [
         {
-          "name": "Bow Limb",
+          "name": "Trimmed Bone",
+          "quantity": 3
+        },
+        {
+          "name": "Nail",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "bone-saw-axe-head",
+      "name": "Bone Saw Axe Head",
+      "category": "Weapon Part",
+      "station": "Weapon Workbench",
+      "maxLevel": 59,
+      "ingredients": [
+        {
+          "name": "Processed Bone",
+          "quantity": 3
+        },
+        {
+          "name": "Trimmed Horn",
+          "quantity": 1
+        },
+        {
+          "name": "Cord",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "bone-work-axe",
+      "name": "Bone Work Axe",
+      "category": "Tool",
+      "station": "Workbench",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Bone Work Blade",
           "quantity": 1
         },
         {
@@ -214,10 +253,294 @@
           "quantity": 1
         },
         {
-          "name": "Long Strap",
+          "name": "Handle",
           "quantity": 1
         }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "bone-work-hammer",
+      "name": "Bone Work Hammer",
+      "category": "Tool",
+      "station": "Workbench",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Bone Stick",
+          "quantity": 1
+        },
+        {
+          "name": "Rope",
+          "quantity": 1
+        },
+        {
+          "name": "Handle",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "bone-work-knife",
+      "name": "Bone Work Knife",
+      "category": "Tool",
+      "station": "Workbench",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Bone Work Blade",
+          "quantity": 1
+        },
+        {
+          "name": "Rope",
+          "quantity": 1
+        },
+        {
+          "name": "Handle",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "bonetooth-knife-blade",
+      "name": "Bonetooth knife blade",
+      "category": "Weapon Part",
+      "station": "Weapon Workbench",
+      "maxLevel": 59,
+      "ingredients": [
+        {
+          "name": "Processed Bone",
+          "quantity": 3
+        },
+        {
+          "name": "Trimmed Teeth",
+          "quantity": 1
+        },
+        {
+          "name": "Dried Leather Strap",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "bow-limb",
+      "name": "Bow Limb",
+      "station": "Workbench",
+      "category": "Bow Parts",
+      "ingredients": [
+        {
+          "name": "Trimmed Wood Pillar",
+          "quantity": 1
+        },
+        {
+          "name": "Metal Stick",
+          "quantity": 1
+        }
+      ],
+      "sourceNote": "Kept separate from Ironwood Bow Limb because the Mastersheet lists both names."
+    },
+    {
+      "id": "bowstring",
+      "name": "Bowstring",
+      "category": "Weapon Part",
+      "station": "Workbench",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Dried Leather Strap",
+          "quantity": 2
+        },
+        {
+          "name": "Oil",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "bug-based-antiserum",
+      "name": "Bug-based Antiserum (45 mins)",
+      "category": "Medicine",
+      "station": "Medical Lab",
+      "maxLevel": 90,
+      "ingredients": [
+        {
+          "name": "Antiserum Material (Bug)",
+          "quantity": 1
+        },
+        {
+          "name": "Slime Material",
+          "quantity": 1
+        },
+        {
+          "name": "Mushroom",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "crossbow-body",
+      "name": "Crossbow Body",
+      "category": "Weapon Part",
+      "station": "Workbench",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Trimmed Wood Pillar",
+          "quantity": 2
+        },
+        {
+          "name": "Metal Stick",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "curved-bone-axe-head",
+      "name": "Curved Bone Axe Head",
+      "station": "Workbench",
+      "category": "Weapon Parts",
+      "ingredients": [
+        {
+          "name": "Trimmed Bone",
+          "quantity": 3
+        },
+        {
+          "name": "Trimmed Wood Pillar",
+          "quantity": 2
+        },
+        {
+          "name": "Leather Strap",
+          "quantity": 2
+        }
       ]
+    },
+    {
+      "id": "dual-layered-crossbow-limb",
+      "name": "Dual-layered Crossbow Limb",
+      "station": "Kiln",
+      "category": "Crossbow Parts",
+      "ingredients": [
+        {
+          "name": "High Purity Metal",
+          "quantity": 3
+        },
+        {
+          "name": "Trimmed Rib",
+          "quantity": 5
+        },
+        {
+          "name": "Dried Leather Strap",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "durable-bowstring",
+      "name": "Durable Bowstring",
+      "category": "Weapon Part",
+      "station": "Workbench",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Tendon",
+          "quantity": 4
+        },
+        {
+          "name": "Sap",
+          "quantity": 2
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "expert-workbench",
+      "name": "Expert Workbench",
+      "category": "Furniture / Workstation",
+      "station": "Not listed",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Processed Plank Shape",
+          "quantity": 3
+        },
+        {
+          "name": "Trimmed Pillar Shape",
+          "quantity": 3
+        },
+        {
+          "name": "Metal Nail",
+          "quantity": 6
+        },
+        {
+          "name": "Glue",
+          "quantity": 6
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34; source columns flattened"
+    },
+    {
+      "id": "giant-razor-blade",
+      "name": "Giant Razor Blade",
+      "station": "Kiln",
+      "category": "Weapon Parts",
+      "ingredients": [
+        {
+          "name": "High Purity Metal",
+          "quantity": 2
+        },
+        {
+          "name": "Trimmed Teeth",
+          "quantity": 3
+        },
+        {
+          "name": "Cord",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "handle",
+      "name": "Handle",
+      "category": "Weapon / Tool",
+      "station": "Workbench",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Stick",
+          "quantity": 1
+        },
+        {
+          "name": "Strap",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
     },
     {
       "id": "improved-bow",
@@ -239,12 +562,31 @@
       ]
     },
     {
-      "id": "pro-class-bow",
-      "name": "PRO-class Bow",
-      "station": "Weapon Workbench",
+      "id": "improved-crossbow",
+      "name": "Improved Crossbow",
+      "station": "Workbench",
       "ingredients": [
         {
-          "name": "Bow Limb",
+          "name": "Crossbow Limb",
+          "quantity": 1
+        },
+        {
+          "name": "Crossbow Body",
+          "quantity": 1
+        },
+        {
+          "name": "Bow String",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "improved-one-handed-knife",
+      "name": "Improved One-handed knife",
+      "station": "Workbench",
+      "ingredients": [
+        {
+          "name": "Knife Blade",
           "quantity": 1
         },
         {
@@ -252,48 +594,7 @@
           "quantity": 1
         },
         {
-          "name": "Durable Bowstring",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "improvised-one-handed-axe",
-      "name": "Improvised One-handed Axe",
-      "station": "Not recorded",
-      "category": "One-handed Axe",
-      "ingredients": [
-        {
-          "name": "Blade",
-          "quantity": 1
-        },
-        {
-          "name": "Strap",
-          "quantity": 1
-        },
-        {
-          "name": "Stick",
-          "quantity": 1
-        }
-      ],
-      "sourceNote": "Mastersheet row; station/level shown as 0 or blank."
-    },
-    {
-      "id": "standard-one-handed-axe",
-      "name": "Standard One-handed Axe",
-      "station": "Workbench",
-      "category": "One-handed Axe",
-      "ingredients": [
-        {
-          "name": "Axe Head",
-          "quantity": 1
-        },
-        {
-          "name": "Rope",
-          "quantity": 2
-        },
-        {
-          "name": "Handle",
+          "name": "Improved Handle",
           "quantity": 1
         }
       ]
@@ -320,13 +621,13 @@
       "sourceNote": "The Mastersheet labels this row 'Improved One-handed knife' even though its component is Axe Head; retained as a source label pending verification."
     },
     {
-      "id": "pro-class-one-handed-axe-source-label",
-      "name": "PRO-class One-handed knife (Axe Head recipe)",
-      "station": "Weapon Workbench",
-      "category": "One-handed Axe",
+      "id": "improved-two-handed-axe-source-label",
+      "name": "Improved Two-handed knife (Large Axe Head recipe)",
+      "station": "Workbench",
+      "category": "Two-handed Axe",
       "ingredients": [
         {
-          "name": "Axe Head",
+          "name": "Large Axe Head",
           "quantity": 1
         },
         {
@@ -334,11 +635,32 @@
           "quantity": 1
         },
         {
-          "name": "Shaft",
+          "name": "Improved Handle",
           "quantity": 1
         }
       ],
-      "sourceNote": "The Mastersheet labels this row 'PRO-class One-handed knife' even though its component is Axe Head; retained as a source label pending verification."
+      "sourceNote": "The Mastersheet labels this row 'Improved Two-handed knife' despite listing Large Axe Head; retained as written pending verification."
+    },
+    {
+      "id": "improvised-one-handed-axe",
+      "name": "Improvised One-handed Axe",
+      "station": "Not recorded",
+      "category": "One-handed Axe",
+      "ingredients": [
+        {
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "name": "Strap",
+          "quantity": 1
+        },
+        {
+          "name": "Stick",
+          "quantity": 1
+        }
+      ],
+      "sourceNote": "Mastersheet row; station/level shown as 0 or blank."
     },
     {
       "id": "improvised-two-handed-axe",
@@ -362,33 +684,654 @@
       "sourceNote": "Mastersheet row; station/level shown as 0 or blank."
     },
     {
-      "id": "standard-two-handed-axe",
-      "name": "Standard Two-handed Axe",
-      "station": "Workbench",
-      "category": "Two-handed Axe",
+      "id": "iron-thunderbird-axe-head",
+      "name": "Iron Thunderbird Axe Head",
+      "category": "Weapon Part",
+      "station": "Kiln",
+      "maxLevel": 60,
       "ingredients": [
         {
-          "name": "Large Axe Head",
-          "quantity": 1
+          "name": "High Purity Metal",
+          "quantity": 3
         },
         {
-          "name": "Rope",
+          "name": "Trimmed Teeth",
           "quantity": 2
         },
         {
-          "name": "Handle",
+          "name": "Metal Nail",
+          "quantity": 2
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "ironwood-bow-limb",
+      "name": "Ironwood Bow Limb",
+      "station": "Workbench",
+      "category": "Bow Parts",
+      "ingredients": [
+        {
+          "name": "Trimmed Wood Pillar",
+          "quantity": 1
+        },
+        {
+          "name": "Metal Stick",
           "quantity": 1
         }
       ]
     },
     {
-      "id": "improved-two-handed-axe-source-label",
-      "name": "Improved Two-handed knife (Large Axe Head recipe)",
-      "station": "Workbench",
-      "category": "Two-handed Axe",
+      "id": "journeyman-workbench",
+      "name": "Journeyman Workbench",
+      "category": "Furniture / Workstation",
+      "station": "Not listed",
+      "maxLevel": 60,
       "ingredients": [
         {
-          "name": "Large Axe Head",
+          "name": "Trimmed Plank Shape",
+          "quantity": 3
+        },
+        {
+          "name": "Trimmed Pillar Shape",
+          "quantity": 2
+        },
+        {
+          "name": "Metal Nail",
+          "quantity": 2
+        },
+        {
+          "name": "Rope",
+          "quantity": 6
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "kitchen",
+      "name": "Kitchen",
+      "category": "Furniture / Workstation",
+      "station": "Not listed",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Mud",
+          "quantity": 10
+        },
+        {
+          "name": "Metal Plank",
+          "quantity": 4
+        },
+        {
+          "name": "Metal Nail",
+          "quantity": 6
+        },
+        {
+          "name": "Glue",
+          "quantity": 8
+        },
+        {
+          "name": "Charcoal",
+          "quantity": 8
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "large-angled-metal-axe-head",
+      "name": "Large Angled Metal Axe Head",
+      "category": "Weapon Part",
+      "station": "Kiln",
+      "maxLevel": 59,
+      "ingredients": [
+        {
+          "name": "High Purity Metal",
+          "quantity": 2
+        },
+        {
+          "name": "Metal Links",
+          "quantity": 2
+        },
+        {
+          "name": "Cord",
+          "quantity": 3
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "large-angled-metal-axe-head-ii",
+      "name": "Large Angled Metal Axe Head II",
+      "category": "Weapon Part",
+      "station": "Kiln",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "High Purity Metal",
+          "quantity": 4
+        },
+        {
+          "name": "Trimmed Obsidian",
+          "quantity": 4
+        },
+        {
+          "name": "Metal Accessories",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "large-bone-axe-head",
+      "name": "Large Bone Axe Head",
+      "category": "Weapon Part",
+      "station": "Workbench",
+      "maxLevel": 39,
+      "ingredients": [
+        {
+          "name": "Trimmed Bone Pillar",
+          "quantity": 2
+        },
+        {
+          "name": "Nail",
+          "quantity": 2
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "large-bone-saw-axe-head",
+      "name": "Large Bone Saw Axe Head",
+      "category": "Weapon Part",
+      "station": "Weapon Workbench",
+      "maxLevel": 59,
+      "ingredients": [
+        {
+          "name": "Processed Bone",
+          "quantity": 3
+        },
+        {
+          "name": "Trimmed Horn",
+          "quantity": 1
+        },
+        {
+          "name": "Cord",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "large-curved-bone-axe-head",
+      "name": "Large Curved Bone Axe Head",
+      "category": "Weapon Part",
+      "station": "Workbench",
+      "maxLevel": 39,
+      "ingredients": [
+        {
+          "name": "Trimmed Bone Pillar",
+          "quantity": 2
+        },
+        {
+          "name": "Trimmed Wood Pillar",
+          "quantity": 2
+        },
+        {
+          "name": "Leather Strap",
+          "quantity": 2
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "large-drying-rack",
+      "name": "Large Drying Rack",
+      "category": "Furniture / Workstation",
+      "station": "Not listed",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Trimmed Wood Pillar",
+          "quantity": 4
+        },
+        {
+          "name": "Glue",
+          "quantity": 4
+        },
+        {
+          "name": "Metal Nail",
+          "quantity": 3
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "large-iron-thunderbird-axe-head",
+      "name": "Large Iron Thunderbird Axe Head",
+      "category": "Weapon Part",
+      "station": "Kiln",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "High Purity Metal",
+          "quantity": 3
+        },
+        {
+          "name": "Trimmed Teeth",
+          "quantity": 2
+        },
+        {
+          "name": "Metal Nail",
+          "quantity": 2
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "large-leaf-box",
+      "name": "Large Leaf Box",
+      "category": "Furniture",
+      "station": "Not listed",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Trimmed Plank Shape",
+          "quantity": 3
+        },
+        {
+          "name": "Leaf",
+          "quantity": 4
+        },
+        {
+          "name": "Pillar Shape",
+          "quantity": 1
+        },
+        {
+          "name": "Nail",
+          "quantity": 4
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34; storage capacity note depends on leaf type"
+    },
+    {
+      "id": "large-loom",
+      "name": "Large Loom",
+      "category": "Furniture / Workstation",
+      "station": "Not listed",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Trimmed Wood Pillar",
+          "quantity": 3
+        },
+        {
+          "name": "Trimmed Wooden Plank",
+          "quantity": 2
+        },
+        {
+          "name": "Rope",
+          "quantity": 5
+        },
+        {
+          "name": "Metal Nail",
+          "quantity": 2
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34; row columns compressed"
+    },
+    {
+      "id": "large-metal-war-axe-head",
+      "name": "Large Metal War Axe Head",
+      "category": "Weapon Part",
+      "station": "Kiln",
+      "maxLevel": 59,
+      "ingredients": [
+        {
+          "name": "Large Metal Chunk",
+          "quantity": 1
+        },
+        {
+          "name": "Dried Leather Strap",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "large-stone-axe-head",
+      "name": "Large Stone Axe Head",
+      "category": "Weapon Part",
+      "station": "Workbench",
+      "maxLevel": 39,
+      "ingredients": [
+        {
+          "name": "Large Stone Chunk",
+          "quantity": 2
+        },
+        {
+          "name": "Stick",
+          "quantity": 2
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "large-thorny-spine-hammer-head-ii",
+      "name": "Large Thorny Spine Hammer Head II",
+      "category": "Weapon Part",
+      "station": "Kiln",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "High Purity Metal",
+          "quantity": 4
+        },
+        {
+          "name": "Trimmed Obsidian",
+          "quantity": 4
+        },
+        {
+          "name": "Metal Accessories",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "medical-lab",
+      "name": "Medical Lab",
+      "category": "Furniture / Workstation",
+      "station": "Not listed",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Trimmed Plank Shape",
+          "quantity": 4
+        },
+        {
+          "name": "Trimmed Wood Pillar",
+          "quantity": 2
+        },
+        {
+          "name": "Nail",
+          "quantity": 2
+        },
+        {
+          "name": "Mud",
+          "quantity": 5
+        },
+        {
+          "name": "Fabric",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "metal-accessories-ii",
+      "name": "Metal Accessories II (x 2)",
+      "category": "Metal Processing",
+      "station": "Workbench",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Metal Links",
+          "quantity": 2
+        },
+        {
+          "name": "Trimmed Bone",
+          "quantity": 4
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "metal-blade",
+      "name": "Metal Blade",
+      "station": "Workbench",
+      "ingredients": [
+        {
+          "name": "Metal Chunk",
+          "quantity": 1
+        },
+        {
+          "name": "Trimmed Bone",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "metal-saw",
+      "name": "Metal Saw",
+      "category": "Tool",
+      "station": "Workbench",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Metal Saw Blade",
+          "quantity": 1
+        },
+        {
+          "name": "Dried Leather Strap",
+          "quantity": 1
+        },
+        {
+          "name": "Handle",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "metal-shovel",
+      "name": "Metal Shovel",
+      "category": "Tool",
+      "station": "Workbench",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Metal Shovel Blade",
+          "quantity": 1
+        },
+        {
+          "name": "Dried Leather Strap",
+          "quantity": 1
+        },
+        {
+          "name": "Handle",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "metal-war-axe-head",
+      "name": "Metal War Axe Head",
+      "station": "Kiln",
+      "category": "Weapon Parts",
+      "ingredients": [
+        {
+          "name": "Metal Chunk",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "obsidian-blade",
+      "name": "Obsidian Blade",
+      "station": "Workbench",
+      "ingredients": [
+        {
+          "name": "Obsidian",
+          "quantity": 4
+        },
+        {
+          "name": "Trimmed Wood Pillar",
+          "quantity": 2
+        },
+        {
+          "name": "Bone Nail",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "oven",
+      "name": "Oven",
+      "category": "Furniture / Workstation",
+      "station": "Not listed",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Mud",
+          "quantity": 4
+        },
+        {
+          "name": "Wooden Plank",
+          "quantity": 2
+        },
+        {
+          "name": "Charcoal",
+          "quantity": 2
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "painkiller-root",
+      "name": "Painkiller Root (20 min)",
+      "category": "Medicine",
+      "station": "Medical Lab",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Root",
+          "quantity": 3
+        },
+        {
+          "name": "Branch",
+          "quantity": 3
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "category": "Cooking",
+      "station": "To be updated",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Bread Dough",
+          "quantity": 2
+        },
+        {
+          "name": "Cheese",
+          "quantity": 1
+        },
+        {
+          "name": "Topping",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34; station marked 'To be updated'"
+    },
+    {
+      "id": "plant-based-antiserum",
+      "name": "Plant-based Antiserum (30 mins)",
+      "category": "Medicine",
+      "station": "Cooking fire",
+      "maxLevel": 90,
+      "ingredients": [
+        {
+          "name": "Antiserum Material (Plant)",
+          "quantity": 1
+        },
+        {
+          "name": "Slime Material",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "poison-sac-antiserum",
+      "name": "Poison Sac-based Antiserum (60 mins)",
+      "category": "Medicine",
+      "station": "Medical Lab",
+      "maxLevel": 90,
+      "ingredients": [
+        {
+          "name": "Antiserum Material (Poison Sac)",
+          "quantity": 1
+        },
+        {
+          "name": "Slime Material",
+          "quantity": 1
+        },
+        {
+          "name": "Moss",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "pro-class-bow",
+      "name": "PRO-class Bow",
+      "station": "Weapon Workbench",
+      "ingredients": [
+        {
+          "name": "Bow Limb",
           "quantity": 1
         },
         {
@@ -396,11 +1339,69 @@
           "quantity": 1
         },
         {
-          "name": "Improved Handle",
+          "name": "Durable Bowstring",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "pro-class-crossbow",
+      "name": "PRO-class Crossbow",
+      "station": "Weapon Workbench",
+      "ingredients": [
+        {
+          "name": "Crossbow Limb",
+          "quantity": 1
+        },
+        {
+          "name": "Sturdy Crossbow Body",
+          "quantity": 1
+        },
+        {
+          "name": "Durable Bowstring",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "pro-class-one-handed-knife",
+      "name": "PRO-class One-handed knife",
+      "station": "Weapon Workbench",
+      "ingredients": [
+        {
+          "name": "Knife Blade",
+          "quantity": 1
+        },
+        {
+          "name": "Tang",
+          "quantity": 1
+        },
+        {
+          "name": "Shaft",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "pro-class-one-handed-axe-source-label",
+      "name": "PRO-class One-handed knife (Axe Head recipe)",
+      "station": "Weapon Workbench",
+      "category": "One-handed Axe",
+      "ingredients": [
+        {
+          "name": "Axe Head",
+          "quantity": 1
+        },
+        {
+          "name": "Tang",
+          "quantity": 1
+        },
+        {
+          "name": "Shaft",
           "quantity": 1
         }
       ],
-      "sourceNote": "The Mastersheet labels this row 'Improved Two-handed knife' despite listing Large Axe Head; retained as written pending verification."
+      "sourceNote": "The Mastersheet labels this row 'PRO-class One-handed knife' even though its component is Axe Head; retained as a source label pending verification."
     },
     {
       "id": "pro-class-two-handed-axe-source-label",
@@ -424,176 +1425,24 @@
       "sourceNote": "The Mastersheet labels this row 'PRO-class Two-handed knife' despite listing Large Axe Head; retained as written pending verification."
     },
     {
-      "id": "stone-axe-head",
-      "name": "Stone Axe Head",
-      "station": "Workbench",
-      "category": "Weapon Parts",
+      "id": "quality-marble-floor",
+      "name": "Quality Marble Floor",
+      "category": "Building Component",
+      "station": "Not listed",
+      "maxLevel": 60,
       "ingredients": [
         {
-          "name": "Large Stone Chunk",
-          "quantity": 1
-        },
-        {
-          "name": "Stick",
-          "quantity": 4
-        }
-      ]
-    },
-    {
-      "id": "bone-axe-head",
-      "name": "Bone Axe Head",
-      "station": "Workbench",
-      "category": "Weapon Parts",
-      "ingredients": [
-        {
-          "name": "Trimmed Bone",
-          "quantity": 3
-        },
-        {
-          "name": "Nail",
-          "quantity": 2
-        }
-      ]
-    },
-    {
-      "id": "curved-bone-axe-head",
-      "name": "Curved Bone Axe Head",
-      "station": "Workbench",
-      "category": "Weapon Parts",
-      "ingredients": [
-        {
-          "name": "Trimmed Bone",
-          "quantity": 3
-        },
-        {
-          "name": "Trimmed Wood Pillar",
-          "quantity": 2
-        },
-        {
-          "name": "Leather Strap",
-          "quantity": 2
-        }
-      ]
-    },
-    {
-      "id": "metal-war-axe-head",
-      "name": "Metal War Axe Head",
-      "station": "Kiln",
-      "category": "Weapon Parts",
-      "ingredients": [
-        {
-          "name": "Metal Chunk",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "giant-razor-blade",
-      "name": "Giant Razor Blade",
-      "station": "Kiln",
-      "category": "Weapon Parts",
-      "ingredients": [
-        {
-          "name": "High Purity Metal",
-          "quantity": 2
-        },
-        {
-          "name": "Trimmed Teeth",
-          "quantity": 3
-        },
-        {
-          "name": "Cord",
-          "quantity": 2
-        }
-      ]
-    },
-    {
-      "id": "bent-bone-knife-blade",
-      "name": "Bent Bone Knife Blade",
-      "station": "Weapon Workbench",
-      "category": "Weapon Parts",
-      "ingredients": [
-        {
-          "name": "Processed Bone",
-          "quantity": 5
-        },
-        {
-          "name": "Trimmed Bone Pillar",
-          "quantity": 3
-        },
-        {
-          "name": "Metal Links",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "wooden-bow-limb",
-      "name": "Wooden Bow Limb",
-      "station": "Workbench",
-      "category": "Bow Parts",
-      "ingredients": [
-        {
-          "name": "Long Stick",
-          "quantity": 2
-        },
-        {
-          "name": "Strap",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "bone-bow-limb",
-      "name": "Bone Bow Limb",
-      "station": "Workbench",
-      "category": "Bow Parts",
-      "ingredients": [
-        {
-          "name": "Trimmed Bone",
+          "name": "Processed Marble",
           "quantity": 4
         },
         {
-          "name": "Rope",
+          "name": "Glue",
           "quantity": 2
         }
-      ]
-    },
-    {
-      "id": "ironwood-bow-limb",
-      "name": "Ironwood Bow Limb",
-      "station": "Workbench",
-      "category": "Bow Parts",
-      "ingredients": [
-        {
-          "name": "Trimmed Wood Pillar",
-          "quantity": 1
-        },
-        {
-          "name": "Metal Stick",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "skull-bow-limb",
-      "name": "Skull Bow Limb",
-      "station": "Weapon Workbench",
-      "category": "Bow Parts",
-      "ingredients": [
-        {
-          "name": "Processed Rib",
-          "quantity": 2
-        },
-        {
-          "name": "Trimmed Skull",
-          "quantity": 1
-        },
-        {
-          "name": "Metal Stick",
-          "quantity": 1
-        }
-      ]
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
     },
     {
       "id": "seagull-bone-bow-limb",
@@ -616,43 +1465,6 @@
       ]
     },
     {
-      "id": "bow-limb",
-      "name": "Bow Limb",
-      "station": "Workbench",
-      "category": "Bow Parts",
-      "ingredients": [
-        {
-          "name": "Trimmed Wood Pillar",
-          "quantity": 1
-        },
-        {
-          "name": "Metal Stick",
-          "quantity": 1
-        }
-      ],
-      "sourceNote": "Kept separate from Ironwood Bow Limb because the Mastersheet lists both names."
-    },
-    {
-      "id": "dual-layered-crossbow-limb",
-      "name": "Dual-layered Crossbow Limb",
-      "station": "Kiln",
-      "category": "Crossbow Parts",
-      "ingredients": [
-        {
-          "name": "High Purity Metal",
-          "quantity": 3
-        },
-        {
-          "name": "Trimmed Rib",
-          "quantity": 5
-        },
-        {
-          "name": "Dried Leather Strap",
-          "quantity": 4
-        }
-      ]
-    },
-    {
       "id": "seagull-bone-crossbow-limb-ii",
       "name": "Seagull Bone Crossbow Limb II",
       "station": "Weapon Workbench",
@@ -671,6 +1483,446 @@
           "quantity": 1
         }
       ]
+    },
+    {
+      "id": "simple-kiln",
+      "name": "Simple Kiln",
+      "category": "Furniture / Workstation",
+      "station": "Not listed",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Trimmed Large Stone",
+          "quantity": 3
+        },
+        {
+          "name": "Solid Plank",
+          "quantity": 3
+        },
+        {
+          "name": "Nail",
+          "quantity": 2
+        },
+        {
+          "name": "Charcoal",
+          "quantity": 2
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "skull-bow-limb",
+      "name": "Skull Bow Limb",
+      "station": "Weapon Workbench",
+      "category": "Bow Parts",
+      "ingredients": [
+        {
+          "name": "Processed Rib",
+          "quantity": 2
+        },
+        {
+          "name": "Trimmed Skull",
+          "quantity": 1
+        },
+        {
+          "name": "Metal Stick",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "standard-bow",
+      "name": "Standard Bow",
+      "station": "Workbench",
+      "ingredients": [
+        {
+          "name": "Bow Limb",
+          "quantity": 1
+        },
+        {
+          "name": "Rope",
+          "quantity": 1
+        },
+        {
+          "name": "Long Strap",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "standard-one-handed-axe",
+      "name": "Standard One-handed Axe",
+      "station": "Workbench",
+      "category": "One-handed Axe",
+      "ingredients": [
+        {
+          "name": "Axe Head",
+          "quantity": 1
+        },
+        {
+          "name": "Rope",
+          "quantity": 2
+        },
+        {
+          "name": "Handle",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "standard-one-handed-knife",
+      "name": "Standard One-handed Knife",
+      "station": "Workbench",
+      "ingredients": [
+        {
+          "name": "Knife Blade",
+          "quantity": 1
+        },
+        {
+          "name": "Rope",
+          "quantity": 2
+        },
+        {
+          "name": "Handle",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "standard-two-handed-axe",
+      "name": "Standard Two-handed Axe",
+      "station": "Workbench",
+      "category": "Two-handed Axe",
+      "ingredients": [
+        {
+          "name": "Large Axe Head",
+          "quantity": 1
+        },
+        {
+          "name": "Rope",
+          "quantity": 2
+        },
+        {
+          "name": "Handle",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "standing-oil-lamp",
+      "name": "Standing oil Lamp",
+      "category": "Building / Decoration",
+      "station": "Not listed",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Processed Wood Pillar",
+          "quantity": 4
+        },
+        {
+          "name": "Oil",
+          "quantity": 3
+        },
+        {
+          "name": "Long Wooden Stick",
+          "quantity": 4
+        },
+        {
+          "name": "Cord",
+          "quantity": 3
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "stone-axe-head",
+      "name": "Stone Axe Head",
+      "station": "Workbench",
+      "category": "Weapon Parts",
+      "ingredients": [
+        {
+          "name": "Large Stone Chunk",
+          "quantity": 1
+        },
+        {
+          "name": "Stick",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "stone-knife-blade",
+      "name": "Stone Knife Blade",
+      "station": "Workbench",
+      "ingredients": [
+        {
+          "name": "Large Stone Chunk",
+          "quantity": 1
+        },
+        {
+          "name": "Stick",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "stove",
+      "name": "Stove",
+      "category": "Furniture / Workstation",
+      "station": "Not listed",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Mud",
+          "quantity": 6
+        },
+        {
+          "name": "Wooden Plank",
+          "quantity": 2
+        },
+        {
+          "name": "Glue",
+          "quantity": 6
+        },
+        {
+          "name": "Metal Nail",
+          "quantity": 4
+        },
+        {
+          "name": "Charcoal",
+          "quantity": 4
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "sturdy-crossbow-body",
+      "name": "Sturdy Crossbow Body",
+      "category": "Weapon Part",
+      "station": "Workbench",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Trimmed Wood Pillar",
+          "quantity": 2
+        },
+        {
+          "name": "Metal Links",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "survival-food",
+      "name": "Survival Food (10 min)",
+      "category": "Cooking",
+      "station": "Cooking fire",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Bug",
+          "quantity": 1
+        },
+        {
+          "name": "Fruit, Grain",
+          "quantity": 3
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34; 'Fruit, Grain' retained as one source ingredient label"
+    },
+    {
+      "id": "tailoring-workbench",
+      "name": "Tailoring Workbench",
+      "category": "Furniture / Workstation",
+      "station": "Not listed",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Processed Plank Shape",
+          "quantity": 8
+        },
+        {
+          "name": "Trimmed Pillar Shape",
+          "quantity": 4
+        },
+        {
+          "name": "Metal Nail",
+          "quantity": 4
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34; source columns flattened"
+    },
+    {
+      "id": "thorny-spine-hammer-head-ii",
+      "name": "Thorny Spine Hammer Head II",
+      "category": "Weapon Part",
+      "station": "Kiln",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "High Purity Metal",
+          "quantity": 4
+        },
+        {
+          "name": "Trimmed Obsidian",
+          "quantity": 4
+        },
+        {
+          "name": "Metal Accessories",
+          "quantity": 1
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.33"
+    },
+    {
+      "id": "weapon-workbench",
+      "name": "Weapon Workbench",
+      "category": "Furniture / Workstation",
+      "station": "Not listed",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Trimmed Plank Shape",
+          "quantity": 8
+        },
+        {
+          "name": "Trimmed Pillar Shape",
+          "quantity": 4
+        },
+        {
+          "name": "Metal Nail",
+          "quantity": 4
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "wide-leaf-box",
+      "name": "Wide Leaf Box",
+      "category": "Furniture",
+      "station": "Not listed",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Trimmed Plank Shape",
+          "quantity": 8
+        },
+        {
+          "name": "Leaf",
+          "quantity": 8
+        },
+        {
+          "name": "Metal Nail",
+          "quantity": 4
+        },
+        {
+          "name": "Rope",
+          "quantity": 4
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "wooden-blinds",
+      "name": "Wooden Blinds",
+      "category": "Furniture",
+      "station": "Not listed",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Wooden Plank",
+          "quantity": 8
+        },
+        {
+          "name": "Trimmed Wooden Stick",
+          "quantity": 4
+        },
+        {
+          "name": "Strap",
+          "quantity": 4
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
+    },
+    {
+      "id": "wooden-bow-limb",
+      "name": "Wooden Bow Limb",
+      "station": "Workbench",
+      "category": "Bow Parts",
+      "ingredients": [
+        {
+          "name": "Long Stick",
+          "quantity": 2
+        },
+        {
+          "name": "Strap",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "wooden-crossbow",
+      "name": "Wooden Crossbow",
+      "station": "Workbench",
+      "ingredients": [
+        {
+          "name": "Trimmed Wood Pillar",
+          "quantity": 1
+        },
+        {
+          "name": "Cord",
+          "quantity": 1
+        },
+        {
+          "name": "Nail",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "wooden-shelf",
+      "name": "Wooden Shelf",
+      "category": "Building / Decoration",
+      "station": "Not listed",
+      "maxLevel": 60,
+      "ingredients": [
+        {
+          "name": "Wooden Plank",
+          "quantity": 8
+        },
+        {
+          "name": "Long Wooden Stick",
+          "quantity": 8
+        },
+        {
+          "name": "Strap",
+          "quantity": 4
+        }
+      ],
+      "source": "Mastersheet PDF",
+      "sourcePage": 34,
+      "note": "PDF p.34"
     }
   ]
 }
